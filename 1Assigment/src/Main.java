@@ -8,23 +8,13 @@ public class Main {
     public static void main(String[] args) {
 
         Car car = new Car.Builder()
-                .model("BMW")
+                .model("Audi")
                 .color("Black")
-                .speed(320)
-                .year(2021)
+                .speed(300)
+                .year(2023)
                 .build();
 
         System.out.println(car);
-
-        Report report = new Report.Builder()
-                .title("My first report")
-                .messages(Arrays.asList(
-                        "Hello world",
-                        "it works!"
-                ))
-                .build();
-
-        System.out.println(report);
 
     }
 
